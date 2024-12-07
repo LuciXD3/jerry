@@ -1,0 +1,19 @@
+/* Popup styles */
+#popup {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  height: 3px;
+  background-color: black;
+  z-index: 1000;
+  display: none;
+}
+
+/* Animations and transitions */
+.animacion-contenedorEXT35 {
+  transition: all 0.3s ease;
+}
+.animacion-contenedorEXT35.oculto {
+  display: none;
+}

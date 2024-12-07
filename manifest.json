@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "AI Answer Extension",
+  "version": "1.0",
+  "description": "Răspunsuri invizibile la întrebări și captură de ecran",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "clipboardWrite",
+    "screenshot"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/test-icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

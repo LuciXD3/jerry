@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#screenshotContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Stiluri pentru a face răspunsurile invizibile */
+div {
+    visibility: hidden;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+/* Când utilizatorul face click pe întrebare, afisăm răspunsul */
+div.visible {
+    visibility: visible;
+    background-color: white;
+    font-size: 10px;  /* Ajustează dimensiunea răspunsului */
+}
